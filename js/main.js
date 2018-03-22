@@ -36,6 +36,7 @@ document.getElementById("parseComponents").innerHTML = elementsShown;
 var cookieValue = '';
 document.cookie = JSON.stringify(finished);
 var showCookie = function(){
+    cookieValue = '';
     var show = document.cookie.split(';');
     var showTwo = JSON.parse(show[0]);
     console.log(showTwo);
